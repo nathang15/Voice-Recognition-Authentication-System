@@ -29,6 +29,13 @@ For more information about whisper, please refer to the official [Whisper](https
    pip install bcrypt
    ```
 
+### Future Update ###
+
+1. Create a user GUI and a demo of how the system is applied with a real device (eg. Raspberry Pi)
+2. Develop an AI to study voice pattern to detect the possible user voices.
+3. Develop the database that store credentials to be more secure.
+4. Differentiate between recordings and actual voices. 
+
 ### Credits ###
 
 VORAS is powered by the [Whisper](https://github.com/openai/whisper) open source project by openAI.
