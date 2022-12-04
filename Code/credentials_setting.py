@@ -8,7 +8,7 @@ import os
 from system_speak import *
 
 #load model
-path = "D:\\AI-based speech recognition login system\\voice_input_output\\"
+#path = your desired path
 model = whisper.load_model("small")
 fs = 44100  # Sample rate
 seconds = 3  # Duration of recording
@@ -66,11 +66,11 @@ def compareElements(list):
 d = {}
 def database(username, pwd):
     d[username] = hash_salt(pwd)
-    if not os.path.exists('D:\AI-based speech recognition login system\\Code\\output.yaml'):
-        with open(r'D:\AI-based speech recognition login system\\Code\\output.yaml', 'w') as file:
+    if not os.path.exists(path + 'output.yaml'):
+        with open(rpath + 'output.yaml', 'w') as file:
             yaml.dump(d, file)
     else:
         
-        with open(r'D:\AI-based speech recognition login system\\Code\\output.yaml', 'a') as file:
+        with open(rpath + 'output.yaml', 'a') as file:
             yaml.dump(d, file)
     return d
