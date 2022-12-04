@@ -1,6 +1,6 @@
 # Voice-Recognition-Authentication-System #
 
-An AI-based voice authentication system built upon openAI Whisper speech recognition model. Users have the ability to use voice for username and passphrases instead of traditional authentication method. This way only the user themselves knows the exact username and passwords. This program is still in progress and have room for improvement. 
+An AI-based voice authentication system built upon openAI Whisper speech recognition model. Users have the ability to use voice for username and passphrases instead of traditional authentication method. This way only the user themselves knows the exact username and passwords. This program is still in progress and have rooms for improvement. 
 
 ## Description ##
 
