@@ -8,7 +8,7 @@ from credentials_setting import *
 from system_speak import *
 
 #load model
-path = "D:\\AI-based speech recognition login system\\voice_input_output\\"
+#path = your desire path
 model = whisper.load_model("small")
 fs = 44100  # Sample rate
 seconds = 3  # Duration of recording
