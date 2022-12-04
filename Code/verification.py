@@ -9,7 +9,7 @@ from system_speak import *
 from user_setup import *
 
 #load model
-path = "D:\\AI-based speech recognition login system\\voice_input_output\\"
+#path = your desired path
 model = whisper.load_model("small")
 fs = 44100  # Sample rate
 seconds = 3  # Duration of recording
@@ -27,9 +27,7 @@ def verify():
         result = model.transcribe(path + "username_input.mp3")
         username = result["text"].lower()
         username =re.sub('\W+','', username)
-        print(username)
-        #username = input("Please enter your username ")
-
+        
         #passphrase_input
         speak("Please say your passphrase ")
         recording = sd.rec(int(seconds * fs), samplerate=fs, channels=2)
@@ -38,12 +36,10 @@ def verify():
         result = model.transcribe(path + "passphrase_input.mp3")
         pwd = result["text"].lower()
         pwd =re.sub('\W+','', pwd)
-        print(pwd)
 
-        with open('D:\AI-based speech recognition login system\\Code\\output.yaml') as file:
+        with open(path + 'output.yaml') as file:
             try:
                 databaseConfig = yaml.safe_load(file)   
-                #print(databaseConfig)
                 passwd = pwd.encode()
                 if(bcrypt.checkpw(passwd, databaseConfig[username])):
                     print('match')
