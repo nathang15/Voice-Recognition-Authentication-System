@@ -6,6 +6,22 @@ An AI-based voice authentication system built upon openAI Whisper speech recogni
 
 Voice-Recognition-Authentication-System is designed using OpenAI whisper model for speech recognition and build a user database using their credentials recorded under speech form. The code up until this commit for now is purely barebone with a working authentication system that have hash,salted passwords store in local database. 
 
+## Demonstration ##
+
+Creating user when there is no existed user:
+
+https://user-images.githubusercontent.com/98335699/211969315-a4d4b092-384e-404c-9ecb-f7bebd1d7dc2.mp4
+
+Verification process:
+
+https://user-images.githubusercontent.com/98335699/211968884-133ce022-1292-4616-a503-942c4a7187fb.mp4
+
+Creating new user:
+
+https://user-images.githubusercontent.com/98335699/211970134-67382d48-1ee7-4339-aa39-0585b78ce658.mp4
+
+The system also has ways to deal with undesirable input, mismatching input, or cancelling command (user can cancel by simply saying 'no' to the question asked).
+
 ### Prerequisites ###
 
 1. Install whisper 
