@@ -4,7 +4,7 @@ An AI-based voice authentication system built upon openAI Whisper speech recogni
 
 ## Description ##
 
-Voice-Recognition-Authentication-System is designed using OpenAI whisper model for speech recognition and build a user database using their credentials recorded under speech form. The code up until this commit for now is purely barebone with a working authentication system that have hash,salted passwords store in local database. 
+Voice-Recognition-Authentication-System is designed using OpenAI whisper model for speech recognition and build a user database using their credentials recorded under speech form. The code up until this commit for now is purely barebone with a functional voice authentication system that have hash,salted passwords store in local database. 
 
 ## Demonstration ##
 
